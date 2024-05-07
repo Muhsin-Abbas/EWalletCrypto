@@ -14,20 +14,12 @@ import {
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/EvilIcons';
-import colors from '../../styles/color';
+import colors from '../../styles/colors';
 import stylefile from '../common/commonstyles';
 import BuyToolbar from '../../components/BuyToolbar';
-import {useNavigation} from '@react-navigation/native';
-
+import { CryptosData } from '../../components/CryptosData';
 const CryptoScreen = () => {
-  const navigation = useNavigation();
   const [searchQuery, setSearchQuery] = useState('');
-  const popularCryptos = [
-    'BTC-bitcoin',
-    'ETH-ethereum',
-    'USDT-etherem',
-    'USDT-etherem',
-  ];
   const coinList = [
     {
       name: 'AAVE',
@@ -77,7 +69,7 @@ const CryptoScreen = () => {
       <View style={{flex: 1, backgroundColor: colors.black}}>
         <BuyToolbar title="Buy" onPressBack={backto} />
         <View style={{paddingHorizontal: 18}}>
-          <View style={stylefile.SearchBar}>
+          <View style={stylefile.searchBar}>
             <Icon name="search" size={35} color="#7E7E7E" />
             <TextInput
               style={{
@@ -112,7 +104,7 @@ const CryptoScreen = () => {
             paddingHorizontal: 17,
           }}>
           <ScrollView horizontal={true}>
-            {popularCryptos.map((crypto, index) => (
+            {CryptosData.map((crypto, index) => (
               <TouchableOpacity key={index} style={stylefile.cryptoText}>
                 <Text style={{color: '#C6C6C6', fontWeight: '600'}}>
                   {crypto}
@@ -134,7 +126,7 @@ const CryptoScreen = () => {
               1
             </Text>
             {filteredCoinOne.map((coin1, index) => (
-              <TouchableOpacity key={index} style={stylefile.CoinText}>
+              <TouchableOpacity key={index} style={stylefile.coinText}>
                 <Image
                   source={coin1.image}
                   style={{

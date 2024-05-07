@@ -1,5 +1,5 @@
 import {Platform} from 'react-native';
-import color from '../../styles/color';
+import color from '../../styles/colors';
 
 export default {
   maincontainer: {
@@ -53,12 +53,12 @@ export default {
     justifyContent: 'center',
     marginLeft: 10,
   },
-  CoinText: {
+  coinText: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
   },
-  tooltxt: {
+  toolTxt: {
     color: '#FFFFFF',
     fontWeight: '600',
     fontSize: 18,
@@ -101,71 +101,7 @@ export default {
     transform: [{rotate: '180deg'}],
     tintColor: '#333333',
   },
-  borderbackground: {
-    width: '100%',
-    height: 0.3,
-    marginTop: 8,
-    backgroundColor: '#56514D',
-  },
-  termconditiontxt: {
-    fontSize: 13,
-    textAlign: 'left',
-    color: '#8D8D8D',
-    marginTop: 5,
-  },
-  termconditionheadingtxt: {
-    fontSize: 16,
-    textAlign: 'left',
-    marginTop: 15,
-    color: '#333333',
-  },
-  bottomborderview: {
-    width: '100%',
-    backgroundColor: 'gray',
-    height: 0.5,
-    marginTop: 5,
-  },
-  contrycodetxt: {
-    color: '#333333',
-    fontSize: 15,
-    marginEnd: 5,
-  },
-  countrytextview: {
-    width: '20%',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    flexDirection: 'row',
-  },
-  countrynametxt: {
-    color: '#333333',
-    fontSize: 15,
-    marginStart: 18,
-  },
-  countryImage: {
-    width: 30,
-    height: 30,
-    justifyContent: 'center',
-    resizeMode: 'contain',
-    marginStart: 5,
-  },
-  mainrenderitem: {
-    width: '100%',
-    height: 40,
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 3,
-  },
-  firstview: {
-    width: '80%',
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-  statecnametxt: {
-    color: '#333333',
-    fontSize: 15,
-    marginStart: 1,
-  },
-  SearchBar: {
+  searchBar: {
     height: 48,
     borderRadius: 10,
     borderWidth: 1,
@@ -174,27 +110,6 @@ export default {
     alignItems: 'center',
     marginVertical: 25,
   },
-  searchbox: {
-    height: 45,
-    borderColor: 'gray',
-    borderWidth: 0.5,
-    borderRadius: 12,
-    marginTop: 5,
-    paddingStart: 15,
-  },
-  notificationImg: {
-    width: 20,
-    height: 20,
-    resizeMode: 'contain',
-    aspectRatio: 1,
-    tintColor: '#333333',
-  },
-  continuebtn: {
-    height: 45,
-    backgroundColor: color.themeVoilet,
-    alignItems: 'center',
-    marginTop: 40,
-    justifyContent: 'center',
-    borderRadius: 5,
-  },
+ 
+ 
 };

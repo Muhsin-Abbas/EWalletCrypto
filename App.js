@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {SafeAreaView, StatusBar, View, Text} from 'react-native';
-import color from './src/styles/color';
+import colors from './src/styles/colors';
 import CryptoScreen from './src/screens/TermsCondition/CryptoScreen';
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         style={{
           width: '100%',
           height: '100%',
-          backgroundColor: color.white,
+          backgroundColor: colors.white,
         }}>
         <StatusBar barStyle="dark-content" />
         <CryptoScreen />

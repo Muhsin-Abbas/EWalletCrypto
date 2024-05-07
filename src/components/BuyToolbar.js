@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import Icons from 'react-native-vector-icons/AntDesign';
 import toolbarStyles from '../screens/common/commonstyles';
-
 const Toolbar = ({title, onPressBack}) => {
   return (
     <View style={toolbarStyles.toolbar}>
@@ -15,7 +14,7 @@ const Toolbar = ({title, onPressBack}) => {
         </View>
       </TouchableOpacity>
 
-      <Text style={toolbarStyles.tooltxt}>{title}</Text>
+      <Text style={toolbarStyles.toolTxt}>{title}</Text>
 
       <TouchableOpacity
         style={toolbarStyles.backbtn}
